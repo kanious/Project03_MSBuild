@@ -28,6 +28,9 @@
      Assets Folder (For all resources)
      Jihye_Yoon.zip (Zip file that includes all files in the output folder)
 
+   - GitHub Link:
+     https://github.com/kanious/Project03_MSBuild
+
 
 
 2. User Input Option
