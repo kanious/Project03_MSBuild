@@ -1,0 +1,3 @@
+MSBuild Execution Command
+
+MSBuild.exe "<Solution File Path>\3DScene\3DScene.vcxproj" -t:project_03 -property:Platform=x64 -property:Configuration=Debug

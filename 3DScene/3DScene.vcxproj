@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{efec5e21-1ed9-49d5-b5e7-1d218614ee55}</ProjectGuid>
+    <RootNamespace>3DScene</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)OpenGL\include\PumpkinEngine;$(ProjectDir)OpenGL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)x64\Debug;$(ProjectDir)OpenGL\lib\x64;$(ProjectDir)OpenGL\lib\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>PumpkinEngine.lib;glew32d.lib;glew32sd.lib;glfw3dll.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)OpenGL\include\PumpkinEngine;$(ProejctDir)OpenGL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)x64\Release;$(ProjectDir)OpenGL\lib\x64;$(ProejctDir)OpenGL\lib\x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>PumpkinEngine.lib;glew32.lib;glew32s.lib;glfw3dll.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Codes\BGObject.cpp" />
+    <ClCompile Include="Codes\Client.cpp" />
+    <ClCompile Include="Codes\DefaultCamera.cpp" />
+    <ClCompile Include="Codes\glad.c" />
+    <ClCompile Include="Codes\main.cpp" />
+    <ClCompile Include="Codes\Scene3D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Codes\BGObject.h" />
+    <ClInclude Include="Codes\Client.h" />
+    <ClInclude Include="Codes\DefaultCamera.h" />
+    <ClInclude Include="Codes\Define.h" />
+    <ClInclude Include="Codes\Enums.h" />
+    <ClInclude Include="Codes\Function.h" />
+    <ClInclude Include="Codes\Scene3D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\x64\Assets\Shader\BoxFragment.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\x64\Assets\Shader\BoxVertex.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\x64\Assets\Shader\ColorFragment.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\x64\Assets\Shader\ColorVertex.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\x64\Assets\Shader\MeshFragment.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\x64\Assets\Shader\MeshVertex.fx">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <!--▼▼▼ BELOW HERE IS MY CUSTOM WORK ▼▼▼-->
+  <!--▼▼▼ BELOW HERE IS MY CUSTOM WORK ▼▼▼-->
+  <!--▼▼▼ BELOW HERE IS MY CUSTOM WORK ▼▼▼-->
+  <ItemGroup>
+	<ExeFiles Include="x64\Debug\$(ProjectName).exe;OpenGL\dll\x64\freeglut.dll;OpenGL\dll\x64\Debug\*.dll" />
+    <ResourceFiles Include="Assets\**\*.*" />
+	<ZipFiles Include="$(MyOutputDir)\**\*.*" />
+  </ItemGroup>
+  <PropertyGroup>
+  	<MyOutputDir>c:\cnd\Jihye_Yoon</MyOutputDir>
+    <ResourceDir>c:\cnd\Jihye_Yoon\Assets</ResourceDir>
+	<ZipName>Jihye_Yoon</ZipName>
+	<TempZipDir>c:\cnd</TempZipDir>
+  </PropertyGroup>
+  <Target Name="BuildAndCopy" DependsOnTargets="Clean;Build">
+    <Message Text="BuildAndCopy" />
+    <MakeDir Directories="$(MyOutputDir)" Condition="!Exists('$(MyOutputDir)')" />
+    <Copy SourceFiles="@(ExeFiles)" DestinationFolder="$(MyOutputDir)" />
+    <MakeDir Directories="$(ResourceDir)" Condition="!Exists('$(ResourceDir)')" />
+    <Copy SourceFiles="@(ResourceFiles)" DestinationFolder="$(ResourceDir)\%(RecursiveDir)" />
+  </Target>
+  <Target Name="project_03" Condition="'$(Configuration)'=='Debug'" DependsOnTargets="BuildAndCopy">
+    <Message Text="project_03" />
+    <Message Text="%24(Configuration) is %22$(Configuration)%22" />
+    <Message Text="MSBuildToolsPath is $(MSBuildToolsPath)" />
+	<CallTarget Targets="CreateZipFile" />
+  </Target>
+  <Target Name="CreateZipFile">
+    <Message Text="CreateZipFile" />
+	<ZipDirectory SourceDirectory="$(MyOutputDir)" DestinationFile="$(TempZipDir)\$(ZipName).zip"
+                  Overwrite="true"	/>
+	<Move SourceFiles="$(TempZipDir)\$(ZipName).zip" DestinationFolder="$(MyOutputDir)" />
+  </Target>
+  <!--▲▲▲ ABOVE HERE IS MY CUSTOM WORK ▲▲▲-->
+  <!--▲▲▲ ABOVE HERE IS MY CUSTOM WORK ▲▲▲-->
+  <!--▲▲▲ ABOVE HERE IS MY CUSTOM WORK ▲▲▲-->
+</Project>
